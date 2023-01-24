@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    font-family: Poppins;
+}
+
+:root{
+    --maincol: rgba(237, 159, 43, 0.721);
+    --text1:grey;
+    --btncol:rgba(214, 142, 35, 0.662);
+}
+
+
+
+body{
+
+    display: flex;   
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincol);
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 380px;
+    width: 450px;
+    padding: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+
+.form-tittle{
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 33px;
+}
+
+h1::before{
+
+    content: "";
+    position: absolute;
+    background-color: var(--maincol);
+    height: 100%;
+    width: 5px;
+    left: 0;
+}
+
+span{
+    color: var(--text1);
+}
+
+.form-field {
+    display: grid;
+    gap: .5rem; 
+     
+}
+
+
+input{
+    width: 95%;
+    padding: 15px;  
+    border: 1px ;
+    background-color: rgba(233, 226, 226, 0.837);
+    border-radius: 5px;
+    
+}
+
+::-webkit-input-placeholder{
+    font-size: 15px;
+}
+
+
+i{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.link{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: var(--maincol);
+    font-weight: bold;
+    font-size: 15px;
+    padding:5px ;
+    
+}
+
+button{
+   height: 100%;
+   border-radius : 6px;
+   font-size: 18px;
+   font-weight: bold; 
+}
+
+.btn1{
+   background-color: var(--btncol); 
+   border: 1px ;
+   margin-bottom: 10px;
+   color: white;
+}
+
+.btn1:hover{
+    background-color: white;
+    color: var(--btncol);
+    border: 1px solid;
+    border-color: var(--btncol);
+    transition: .3s ease;
+}
+
+
+.btn2{
+    background-color: white;
+    border-color: var(--maincol);
+    margin-top: 10px;
+    color: var(--btncol);
+}
+
+.btn2 a {
+    text-decoration: none;
+    color:var(--maincol) ;
+}
+
+
+.or{
+    display: flex;
+    color: var(--text1);
+    font-size: .9rem;
+}
+
+.or::before, .or:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--text1);  
+    margin: auto;
+   
+}
+
+.or::before{
+    margin-right: 10px;  
+}
+
+.or::after{
+    margin-left:10px;
+    
+}
+
+.FL-name{
+    display: flex; 
+    width: 101%; 
+}
+
+.FL-name .inp1{
+  margin-right: 10px;
+} 
+
+.sign{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.footer {  
+    text-align: center; 
+    margin-top: 8px;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+
+
+.link2 {
+    text-decoration: none;
+    color: var(--maincol);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
